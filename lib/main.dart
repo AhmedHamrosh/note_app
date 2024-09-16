@@ -1,10 +1,9 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:note_app/views/note_view.dart';
 
 void main()
 {
-  runApp(NoteApp());
+  runApp(const NoteApp());
 }
 
 class NoteApp extends StatelessWidget
@@ -21,7 +20,7 @@ class NoteApp extends StatelessWidget
         
       
       ),
-      home:NoteView()
+      home:const NoteView()
     );
   }
 }

@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class SearchIcon extends StatelessWidget
@@ -10,7 +9,7 @@ class SearchIcon extends StatelessWidget
     return Container(
       width:40,
       height: 40,
-      decoration: BoxDecoration(borderRadius: BorderRadius.circular(12) , color: Colors.grey.withOpacity(0.1)),
+      decoration: BoxDecoration(borderRadius: BorderRadius.circular(12) , color: Colors.grey.withOpacity(0.08)),
       child:Center(child:IconButton(onPressed: (){}, icon:const Icon(Icons.search , size:25)),)
     );
   }

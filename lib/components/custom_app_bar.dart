@@ -4,6 +4,7 @@ import 'package:note_app/components/custom_search_icon.dart';
 
 class CustomAppbar extends StatelessWidget
 {
+  const CustomAppbar({super.key});
   @override
   Widget build(BuildContext context)
   {
