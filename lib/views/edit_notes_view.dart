@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:note_app/components/custom_app_bar.dart';
 import 'package:note_app/components/custom_text_field.dart';
+import 'package:note_app/components/edit_note_color_list_view.dart';
 import 'package:note_app/cubits/notes_cubit/notes_cubit.dart';
 import 'package:note_app/models/note_model.dart';
 
@@ -57,6 +58,8 @@ class _EditNotesViewState extends State<EditNotesView> {
                 _subTitle =data;
               },
               ),
+              const SizedBox(height:20),
+              EditNoteColorListView(noteModel:widget.noteModel),
           
           ],
         )

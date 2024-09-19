@@ -5,6 +5,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:note_app/components/add_note_color_list_view.dart';
 import 'package:note_app/components/custom_button.dart';
 import 'package:note_app/components/custom_text_field.dart';
 import 'package:note_app/constants.dart';
@@ -61,6 +62,8 @@ class _AddNoteFormState extends State<AddNoteForm> {
                   _subTitle=data;
                 },
                 ),
+            const SizedBox(height: 16,),
+            AddNoteColorListView(),    
             const  SizedBox(height: 32,),
 
               BlocBuilder<AddNoteCubit, AddNoteState>(

@@ -8,6 +8,7 @@ import 'package:note_app/models/note_model.dart';
 import 'package:note_app/simple_bloc_observer.dart';
 import 'package:note_app/views/note_view.dart';
 import 'package:bloc/bloc.dart';
+import 'package:note_app/views/splash_screen.dart';
 
 void main() async {
   await Hive.initFlutter();
@@ -26,7 +27,7 @@ class NoteApp extends StatelessWidget {
       child: MaterialApp(
           debugShowCheckedModeBanner: false,
           theme: ThemeData(brightness: Brightness.dark, fontFamily: 'Poppins'),
-          home: const NoteView()),
+          home:  SplashScreen()),
     );
   }
 }
